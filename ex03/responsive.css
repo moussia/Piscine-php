@@ -1,0 +1,108 @@
+h1
+{
+	text-align:center;
+}
+h2
+{
+	text-align:center;
+}
+img
+{
+	width: 25%;
+	margin-left:38%;
+}
+table
+{
+	width: 100%;
+	border:1px white solid;
+	background-color:white;
+}
+td
+{
+	text-align:center;
+	border:1px solid black;
+	height:100%;
+}
+tr
+{
+	width:90%;
+}
+.numero
+{
+	text-align: left;
+}
+.poids
+{
+	text-align: right;
+}
+.no_border
+{
+	border: none;
+}
+.orangeclair
+{
+	background-color:#FAAC58;
+}
+.violet
+{
+	background-color:#9F81F7;
+}
+.bleu
+{
+	background-color:#81DAF5;
+}
+.gris
+{
+	background-color:#A4A4A4;
+}
+.jaune
+{
+	background-color:#D7DF01;
+}
+.vertclair
+{
+	background-color:#3ADF00;
+}
+.rose
+{
+	background-color:#DF01D7;
+}
+.vertfoncer
+{
+	background-color:#31B404;
+}
+.vert
+{
+	background-color:#86B404;
+}
+.jauneclair
+{
+	background-color:#F4FA58;
+}
+.orange
+{
+	background-color:#FE9A2E;
+}
+
+@media (max-width: 1024px) {
+	h2
+	{
+		font-size:medium;
+	}
+	table
+	{
+		height:40%;
+	}
+
+}
+
+@media (max-width: 800) {
+	h2
+	{
+		font-size:small;
+	}
+	table
+	{
+		height:40%;
+	}
+}
