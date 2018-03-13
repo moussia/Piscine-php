@@ -1,0 +1,172 @@
+body
+{
+	background-color:#505050;
+}
+
+header
+{
+	background-color: #909090;
+	height: 120px;
+	width:1420px;
+	margin-left:350px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow:9px 9px 9px black;
+	border-radius: 10px;
+}
+
+header img
+{
+	height: 100%;
+}
+
+.droite_h
+{
+	float: right;
+	width:285px;
+	position: relative;
+}
+
+.loupe
+{
+	height: auto;
+	margin-top: 2px;
+}
+
+.again
+{
+	float: right;
+	height: auto;
+	margin-right: 10px;
+	width: 17px;
+}
+
+.deconnecter
+{
+	bottom: 31px;
+	height: auto;
+	margin-right: 10px;
+	position: absolute;
+	right:0;
+}
+
+.milieu
+{
+	float : left;
+}
+
+.gauche
+{
+	width: 105px; /*pour mettre les choses en dessous l1 de lautre*/
+	padding-left: 35px;
+	margin-left:400px;
+	margin-top:30px;
+	height:385px;
+	padding-bottom:20px;/*pour le bas de la boite*/
+	padding-top: 20px;
+	background-color:#909090;
+	border-radius:10px;
+	box-shadow:9px 9px 9px black;
+}
+
+.gauche img
+{
+	width: 70px;
+	margin-bottom: 10px;
+}
+
+.regarder
+{
+	border:5px red solid;
+	border-radius:6px;
+}
+
+.mil
+{
+	margin-right: 30px;
+	width: 1020px;
+	margin-left: 550px;
+	margin-top:-434px;
+	padding-bottom: 10px;
+}
+
+.cluster
+{
+	margin-left:10px;
+	margin-top:10px;
+	width:1000px;
+	border:10px #808080 solid;
+	border-radius:10px;
+	box-shadow:9px 9px 9px black;
+}
+
+.droite{
+	width: 131px;
+	height: 425px;
+	padding-top: 20px;
+	background-color: #909090;
+	margin-top:-590px;
+	padding-left: 10px;
+	float:right;
+	margin-right:-170px;
+	text-align: center;
+	border-radius:10px;
+	box-shadow:9px 9px 9px black;
+/*	margin-top:-57%;*/
+}
+
+.book{
+	height: 87px;
+	width: 55px;
+}
+
+.Serviette{
+	width: 78px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.brick{
+	background: repeat url('./resources/brick.jpg');
+	height: 70px;
+	width: 120px;
+}
+
+.boite
+{
+	float:left;
+	position:absolute; /*pour le mettre sur la photo*/
+	margin-top:-70px;
+	background-color: #8CFD8E;
+	width:520px;
+	height:170px;
+	border-radius:10px;
+	margin-left:350px;
+	box-shadow:7px 7px 6px black;
+}
+
+.boite p
+{
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.ombre
+{
+	text-shadow: 5px 5px 4px red;
+}
+
+.majuscule
+{
+	font-size:37px;
+}
+
+p
+{
+	font-size:20px;
+}
+
+.italic
+{
+	font-style:italic;
+}
