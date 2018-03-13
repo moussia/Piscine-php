@@ -1,43 +1,41 @@
-h1
-{
-	text-align:center;
-}
 h2
 {
 	text-align:center;
-}
-img
-{
-	width: 25%;
-	margin-left:38%;
+	font-size:1vw;
 }
 table
 {
 	width: 100%;
-	border:1px white solid;
-	background-color:white;
-}
-td
-{
-	text-align:center;
-	border:1px solid black;
-	height:100%;
-}
-tr
-{
-	width:90%;
-}
-.numero
-{
-	text-align: left;
-}
-.poids
-{
-	text-align: right;
+	height: 100%;
 }
 .no_border
 {
 	border: none;
+}
+td p
+{
+	font-size:1vw;
+}
+td
+{
+	text-align: center;
+	position: relative;
+	border: 1px solid black;
+}
+.poids{
+	position: absolute;
+	text-align: right;
+	margin-right: 3px;
+	margin: 0;
+	top: 0;
+	right: 0;
+}
+.numero
+{
+	position: absolute;
+	text-align: left;
+	margin: 0;
+	bottom: 0;
 }
 .orangeclair
 {
@@ -82,27 +80,4 @@ tr
 .orange
 {
 	background-color:#FE9A2E;
-}
-
-@media (max-width: 1024px) {
-	h2
-	{
-		font-size:medium;
-	}
-	table
-	{
-		height:40%;
-	}
-
-}
-
-@media (max-width: 800) {
-	h2
-	{
-		font-size:small;
-	}
-	table
-	{
-		height:40%;
-	}
 }
