@@ -1,12 +1,11 @@
 <html>
-<head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="./doft.css" />
-	<title> Day of the 42 </title>
-</head>
-<body>
-	<header>
-		<div class="essai">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./doft.css" />
+		<title> Day of the 42 </title>
+	</head>
+	<body>
+		<header>
 			<img  src="./resources/day_of_the_42.png" alt=""/>
 
 			<div class="droite_h">
@@ -18,40 +17,43 @@
 					<img class="deconnecter" src="./resources/close.gif" alt="" title="deconnecter"/>
 				</a>
 			</div>
-	</header>
+		</header>
 
-			<div class="milieu">
-				<div class=" gauche">
-					<img class="avancer" src="./resources/arrow.png" alt="avancer" title="avancer"/>
-					<img class="prendre" src="./resources/main.png" alt="prendre" title="prendre"/>
-					<img class="regarder" src="./resources/oeil.png" alt="regarder" title="regarder"/>
-					<img class="utiliser" src="./resources/outil.png" alt="utiliser" title="utiliser"/>
-					<img class="parler" src="./resources/chat-icon.png" alt="parler" title="parler"/>
-				</div>
+		<div class="milieu">
+			<div class=" gauche">
+				<img class="avancer" src="./resources/arrow.png" alt="avancer" title="avancer"/>
+				<img class="prendre" src="./resources/main.png" alt="prendre" title="prendre"/>
+				<img class="regarder" src="./resources/oeil.png" alt="regarder" title="regarder"/>
+				<img class="utiliser" src="./resources/outil.png" alt="utiliser" title="utiliser"/>
+				<img class="parler" src="./resources/chat-icon.png" alt="parler" title="parler"/>
+			</div>
 
-				<div class="mil">
-					<img class="cluster"  src="./resources/cluster.jpg" alt="cluster" title="cluster"/>
-				</div>
+			<div class="mil">
+				<img class="cluster"  src="./resources/cluster.jpg" alt="cluster" title="cluster" usemap="#Map"/>
+			</div>
 
-				<div class="droite">
-					<img src="./resources/book.png" class="book" alt="book" title="book"> <br>
-					<img src="./resources/towel.png" class="Serviette" alt="serviette" title="serviette">
-					<div class="brick" title="Brique"></div>
-				</div>
-				<div class="boite">
-					<p>Vous <span class="majuscule"> entrez </span>  alors dans une grande piece remplie d'<span class="ombre">ordinateurs</span>...</p>
+			<div class="droite">
+				<img src="./resources/book.png" class="book" alt="book" title="book"> <br>
+				<img src="./resources/towel.png" class="Serviette" alt="serviette" title="serviette">
+				<div class="brick" title="Brique"></div>
+			</div>
+			<div class="boite">
+				<p>Vous <span class="majuscule"> entrez </span>  alors dans une grande piece remplie d'<span class="ombre">ordinateurs</span>...</p>
 				<p class="italic"> -Bonjour, vous êtes nouveau ici ? </p>
 
-					<form action="">
-						 <input type="text" class="texte" />
-						<input class="submit" type="submit" name="Repondre" value="Repondre" />
-					</form>
-				</div>
+				<form action="">
+					<input type="text" class="texte" />
+					<input class="submit" type="submit" name="Repondre" value="Repondre" />
+				</form>
 			</div>
 		</div>
-	<map name="bulles" id="bulles">
-		<area shape="circle" title="" coords="803,446,1006,325" href="http://www.ikea.com" alt="">
-		<area shape="circle" title="" coords="803,446,1006,325" href="http://www.apple.com" alt="">
-	</map>
-</body>
+
+		<map name="Map" id="Map">
+			<area shape="rect" title="" coords="319,332,452,550" href="http://www.ikea.com" alt="chaise"/>
+			<area shape="rect" title="" coords="802,317,996,490" href="http://www.apple.com" alt="ecran"/>
+		</map>
+
+
+
+	</body>
 </html>
