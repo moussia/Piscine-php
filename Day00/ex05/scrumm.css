@@ -173,3 +173,34 @@ p
 {
 	font-style:italic;
 }
+
+
+.bordure
+{
+	display: inline-block;
+	background-color: #357519;
+	border: .125em solid ;
+}
+.bordure:hover
+{
+	border: .25em solid #357519;
+	border-radius: .25em;
+}
+.repondre
+{
+	font-size:20px;
+	color:white;
+}
+
+.repondre:hover
+{
+	border: .25em solid #357519;
+	border-radius: .25em;
+}
+/*
+.aladin
+{
+	width: 1000px;
+	height: 500px;
+}
+*/

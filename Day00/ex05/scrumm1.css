@@ -76,13 +76,13 @@ header img
 	width: 70px;
 	margin-bottom: 10px;
 }
-
+/*
 .regarder
 {
 	border:5px red solid;
 	border-radius:6px;
 }
-
+*/
 .mil
 {
 	margin-right: 30px;
@@ -92,7 +92,7 @@ header img
 	padding-bottom: 10px;
 }
 
-.cluster
+.aladin
 {
 	margin-left:10px;
 	margin-top:10px;
@@ -107,10 +107,10 @@ header img
 	height: 425px;
 	padding-top: 20px;
 	background-color: #909090;
-	margin-top:-590px;
+	margin-top:-527px;
 	padding-left: 10px;
 	float:right;
-	margin-right:-170px;
+	margin-right:-150px;
 	text-align: center;
 	border-radius:10px;
 	box-shadow:9px 9px 9px black;
@@ -172,4 +172,46 @@ p
 .italic
 {
 	font-style:italic;
+}
+
+
+.bordure
+{
+	display: inline-block;
+	background-color: #357519;
+	border: .125em solid ;
+}
+.bordure:hover
+{
+	border: .25em solid #357519;
+	border-radius: .25em;
+}
+.repondre
+{
+	font-size:20px;
+	color:white;
+}
+
+.repondre:hover
+{
+	border: .25em solid #357519;
+	border-radius: .25em;
+}
+
+.aladin
+{
+	width: 1000px;
+	height: 500px;
+}
+
+
+.coeur
+{
+	margin-left:350px;
+	margin-top:-100px;
+}
+
+.direction
+{
+	
 }
