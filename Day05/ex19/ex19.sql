@@ -1,0 +1,2 @@
+SELECT ABS() AS uptime 
+
