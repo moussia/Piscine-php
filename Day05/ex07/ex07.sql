@@ -1,3 +1,1 @@
-SELECT titre, resum FROM film
-WHERE titre LIKE %42% OR resume LIKE %42%
-ORDER BY duree_min;
+SELECT title, summary, id_film FROM film WHERE title LIKE '%42%' OR summary LIKE '%42%' ORDER BY duration;

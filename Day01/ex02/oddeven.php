@@ -1,25 +1,24 @@
 #!/usr/bin/php
 <?php
-while(1)
+
+function msg_result($val)
 {
-	echo 'Entrez un nombre: ';
-	$chiffre = trim(fgets(STDIN));
-	if (feof(STDIN) == true)
-		exit();
-	if (!is_numeric($chiffre))
-	{
-		echo "'" .$chiffre. "'"  . ' n\'est pas un chiffre';
-		echo "\n";
-	}
-	elseif ($chiffre % 2 == 1)
-	{
-		echo 'Le chiffre ' . $chiffre . ' est Impair';
-		echo "\n";
-	}
-	elseif ($chiffre % 2 == 0)
-	{
-		echo 'Le chiffre ' . $chiffre . ' est Pair';
-		echo "\n";
-	}
+	if (preg_match("#[0-9]?[02468]$#", $val))
+		echo "Le chiffre $val est Pair\n";
+	else
+		echo "Le chiffre $val est Impair\n";
 }
+
+while (1)
+{
+	print("Entrez un nombre: ");
+	$line = trim(fgets(STDIN));
+	if (feof(STDIN) == TRUE)
+		exit;
+	if (!is_numeric($line))
+		print("'$line' n'est pas un chiffre\n");
+	else
+		msg_result($line);
+}
+
 ?>

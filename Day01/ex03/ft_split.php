@@ -8,10 +8,11 @@ function ft_split($tableau)
 	$resultat = array();//array — Crée un tableau
 	foreach($tab as $element)
 	{
-		if (!empty($element))
+		if (($element != ""))
 			$resultat[] = $element;
 	}
 	unset($tab);//unset — Détruit une variable
 	return ($resultat);
 }
+
 ?>

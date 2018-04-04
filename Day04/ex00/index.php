@@ -1,9 +1,6 @@
 <?php
-
 session_start();
-
 $titre = "formulaire";
-
 if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] == "OK")
 {
 	$_SESSION['login'] = $_GET['login'];
@@ -12,9 +9,22 @@ if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] == "OK")
 ?>
 
 <html>
+	<head>
+		<style>
+		.centre
+		{
+			text-align:center;
+		}
+		body
+		{
+			background-color:#F5A9D0;
+		}
+		</style>
+	</head>
 	<body>
 		<form method="get" action="index.php">
 			<fieldset>
+				<div class="centre">
 				<p>
 			Identifiant :<input name="login" type="text" value="<?php echo $_SESSION['login']; ?>" />
 			<br />
@@ -23,7 +33,8 @@ if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] == "OK")
 			<input type="submit" name="submit" value="OK" />
 			<br />
 				</p>
-			</form>
-	</fieldset>
+				</div>
+			</fieldset>
+		</form>
 	</body>
 </html>

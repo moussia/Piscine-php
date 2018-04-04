@@ -1,0 +1,47 @@
+body	{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#item
+{
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#item input
+{
+	padding: 15px 32px;
+	font-size: 16px;
+}
+
+#category span
+{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.img_item {
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: inline-block;
+	height: 350px;
+	width: 300px;
+}
+
+.img_item img {
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 230px;
+	width: 280px;
+}
+
+.img_item span {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.img_item input {
+	margin-top: 10px;
+}

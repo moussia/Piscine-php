@@ -1,4 +1,1 @@
-SELECT REVERSE(SUBSTRING(telephone, 2))
-AS enohpelet
-FROM distrib
-WHERE telephone LIKE 05%;
+SELECT REVERSE(SUBSTR(phone_number, 2)) AS enohpelet from distrib WHERE phone_number REGEXP '^05';

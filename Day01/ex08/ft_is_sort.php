@@ -7,9 +7,9 @@ function ft_is_sort($tableau)
 	sort ($tableau_trie);
 	//Calcule la différence de deux tableaux, en prenant aussi en compte les clés
 	if (!(array_diff_assoc($tableau, $tableau_trie)))
-		return (1);
+		return (TRUE);
 	else
-		return (0);
+		return (FALSE);
 }
 
 ?>

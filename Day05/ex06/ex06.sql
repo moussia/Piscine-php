@@ -1,4 +1,1 @@
-SELECT titre resum
-FROM film
-WHERE LOWER(resum) LIKE %vincent%
-ORDER BY id;
+SELECT title, summary FROM film WHERE summary LIKE '%VINCENT%' ORDER BY id_film;

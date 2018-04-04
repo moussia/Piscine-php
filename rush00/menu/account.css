@@ -1,0 +1,66 @@
+.menu_title {
+	text-align: center;
+}
+
+.folding_div {
+	height: 3em;
+	margin: 1em 0;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+	border-radius: 5px;
+}
+
+.folding_div_top {
+	box-shadow: 0 1px 5px;
+	width 100%;
+	height: 1em;
+	padding: 1em 5px;
+	border-radius: 5px;
+}
+
+.admin.folding_div:nth-child(even),
+.admin.folding_div:nth-child(odd) {
+	background-color: rgb(255, 102, 0);
+}
+
+.folding_div:nth-child(odd) {
+	background-color: rgb(48,43,140);
+}
+
+.folding_div:nth-child(even) {
+	background-color: rgb(53,49,171);
+}
+
+.folding_div:hover {
+	background-color: rgb(78, 95, 202);
+	height: 25vh;
+}
+
+.folding_div_bottom {
+	display: none;
+	padding: 1em;
+	overflow: hidden;
+}
+
+.folding_div:hover .folding_div_bottom {
+	display: block;
+	height: 21vh;
+}
+
+.options {
+	width: 50%;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.inputfield {
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid grey;
+	outline: none;
+	width: 100%;
+}
+
+.inputfield:focus {
+	border-bottom: 1px solid rgb(40, 35, 119);
+}

@@ -1,60 +1,24 @@
 #!/usr/bin/php
 <?php
 
-if ($argv[1] != 1)
+if(count($argv) == 1)
 {
+	exit;
+}
+elseif ($argv[1] != 1)
+{
+	$argv[1] = trim($argv[1]);
+	$argv[1] = preg_replace("/ +/", " ", $argv[1]);
 	$tableau = explode(" ", $argv[1]);
-	$filtre = array_filter($tableau);
+	//array_merge — Fusionne plusieurs tableaux en un seul
+	$filtre = array_merge($tableau);
+	//array_slice — Extrait une portion de tableau
 	foreach(array_slice($filtre ,1) as $elements)
 	{
 		echo $elements . " ";
 	}
 	echo $filtre[0] . "\n";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-if ($argv[1] != 1)
-{
-	$tableau = explode(" ", $argv[1]);
-	//array_filter — Filtre les éléments d'un tableau grâce à une fonction utilisateur
-	$filtre = array_filter($tableau);
-	//array_slice — Extrait une portion de tableau
-	foreach (array_slice($filtre, 1) as $elements)
-	{
-		echo "$elements" . " ";
-	}
-	echo "$filtre[0]" . "\n";
-}
-*/
+else
+	return;
 ?>

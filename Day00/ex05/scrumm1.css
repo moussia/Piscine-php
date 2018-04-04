@@ -177,6 +177,7 @@ p
 
 .bordure
 {
+	text-decoration: none;
 	display: inline-block;
 	background-color: #357519;
 	border: .125em solid ;

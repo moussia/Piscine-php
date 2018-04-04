@@ -1,11 +1,6 @@
 #!/usr/bin/php
 <?php
 
-//1er alphabat
-//2eme chiffre
-//3eme les autres caracteres
-
-
 function ft_split($tableau)
 {
 	$tab = explode(" ", $tableau);
@@ -13,9 +8,9 @@ function ft_split($tableau)
 	return ($tab);
 }
 
-if ($argv != 1)
+$resultat = array();
+if (count($argv) != 1)
 {
-	$resultat = array();
 	foreach($argv as $elements)
 	{
 		if ($elements != $argv[0])
@@ -25,6 +20,7 @@ if ($argv != 1)
 			$resultat = array_merge($resultat, $tab);
 		}
 	}
+$numeric = array();
 	foreach ($resultat as $element)
 	{
 		if (is_numeric($element) == TRUE)
@@ -34,6 +30,7 @@ if ($argv != 1)
 	}
 	sort($numeric, SORT_STRING);
 
+$alpha = array();
 	foreach ($resultat as $element)
 	{
 		if (ctype_alpha($element) == TRUE)
@@ -41,6 +38,7 @@ if ($argv != 1)
 			$alpha[] = $element;
 		}
 	}
+$ascii = array();
 	sort($alpha, SORT_NATURAL | SORT_FLAG_CASE);
 
 	foreach ($resultat as $element)
@@ -52,11 +50,11 @@ if ($argv != 1)
 	}
 	sort($ascii);
 
-	foreach($numeric as $ele)
+	foreach($alpha as $ele)
 	{
 		echo $ele . "\n";
 	}
-	foreach($alpha as $ele)
+	foreach($numeric as $ele)
 	{
 		echo $ele . "\n";
 	}

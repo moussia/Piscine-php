@@ -9,7 +9,7 @@ else
 {
 	$symboles = explode(";", "+;-;*;/;%");
 	$recuperation = sscanf($argv[1], "%d %c %d");
-	if ($recuperation[0] && $recuperation[1] && $recuperation[2] && !$recuperation[3])
+	if ($recuperation[0] !== FALSE && $recuperation[1] && $recuperation[2] !== FALSE && !$recuperation[3])
 	{
 		if ($recuperation[1] == '+')
 		{
@@ -25,6 +25,11 @@ else
 		{
 			$resultat = $recuperation[0] * $recuperation[2];
 			echo $resultat . "\n";
+		}
+		if ($recuperation[1] == '/' && $recuperation[2] == 0)
+		{
+			echo "Syntax Error\n";
+			return;
 		}
 		if ($recuperation[1] == '/')
 		{

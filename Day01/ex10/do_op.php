@@ -21,6 +21,10 @@ if (count($argv) == 4)
 			$resultat = $symbole1 * $symbole3;
 			echo $resultat . "\n";
 		}
+		elseif($symbole2 == '/' && $symbole3 == 0)
+		{
+			echo "Incorrect Parameters\n";
+		}
 		elseif ($symbole2 == '/')
 		{
 			$resultat = $symbole1 / $symbole3;

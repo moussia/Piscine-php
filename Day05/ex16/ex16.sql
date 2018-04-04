@@ -1,4 +1,1 @@
-SELECT COUNT (*)
-FROM historique_membre
-WHERE DATE BETWEEN '30-10-2006' AND '27-07-2007'
-OR (MONTH(DATE) = 12 AND DAY(DATE) = 24);
+SELECT COUNT(date_last_film) AS movies FROM member WHERE DATE(date_last_film) >= "2006-10-30" AND DATE(date_last_film) <= "2007-07-27" OR MONTH(date_last_film) = "12" AND DAY(date_last_film) = "24";

@@ -1,4 +1,1 @@
-SELECT nom, prenom, DATE(date_de_naissance)
-FROM fiche_personne
-WHERE YEAR(date_de_naissance) = 1989
-ORDER BY nom;
+SELECT last_name, first_name, CAST(birthdate AS DATE) as birthdate FROM user_card WHERE year(birthdate)=1989 ORDER BY last_name;

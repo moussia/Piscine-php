@@ -1,42 +1,34 @@
 <?php
 
-$filename = "../private";
-$file_name = "../private/passwd";
-
-if ($_POST['login'] && $_POST['passwd'] && $_POST['submit']== "OK")
+if ($_POST && $_POST['submit'] == "OK" && $_POST['login'] !== "" && $_POST['passwd'] !== "")
 {
-	if (!file_exists($filename))
+	$var = 1;
+	if (file_exists("../private") == false)
+		mkdir("../private");
+	else
 	{
-		mkdir($filename);
-	}
-	if (file_exists($file_name) != NULL)
-	{
-		file_get_contents($file_name, NULL);
-	}
-	$creationdevariable =unserialize(file_get_contents($file_name));
-	if($creationdevariable == NULL)
-	{
-		$existe = 0;
-		foreach ($creationdevariable as $cle => $elements)
+		$file = file_get_contents("../private/passwd");
+		if ($file)
 		{
-			if ($elements['login'] === $_POST['login'])
-				$existe = 1;
+			$data = unserialize($file);
+			foreach ($data as $account)
+			{
+				if ($account['login'] == $_POST['login'])
+				{
+					$var = 2;
+					echo "ERROR\n";
+				}
+			}
 		}
 	}
-	if ($existe)
+	if ($var == 1)
 	{
-		echo "ERROR\n";
-	} else {
-		$tmp['login'] = $_POST['login'];
-		$tmp['passwd'] = hash('whirlpool', $_POST['passwd']);
-		$creationdevariable[] = $tmp;
-		file_put_contents($file_name, serialize($creationdevariable));
+		$data[] = array("login" => $_POST['login'], "passwd" => hash("whirlpool", $_POST['passwd']));
+		file_put_contents("../private/passwd", serialize($data));
 		echo "OK\n";
 	}
 }
 else
-{
 	echo "ERROR\n";
-}
 
 ?>
