@@ -1,11 +1,17 @@
 <?php
-	public class Targaryen
+class Targaryen
+{
+	public function resistsFire()
 	{
-		getBurned()
-		{
-			print("burns alive");
-		}
-protected $daenerys = "emerges naked but unharmed";
+		return False;
 	}
+	public function getBurned()
+	{
+		if ($this->resistsFire() == True)
+			return ("emerges naked but unharmed");
+		else
+			return ("burns alive");
+	}
+}
 
 ?>
